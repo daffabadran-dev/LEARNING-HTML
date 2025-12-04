@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Demo Elemen HTML: pre, code, samp, kbd</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background: #f8f9fa;
+      color: #333;
+    }
+    blockquote {
+      background: #e9f7ff;
+      border-left: 5px solid #0078d4;
+      padding: 15px 20px;
+      border-radius: 0 8px 8px 0;
+      margin: 30px 0;
+    }
+    pre {
+      background: #282c34;
+      color: #abb2bf;
+      padding: 16px;
+      border-radius: 8px;
+      overflow-x: auto;
+      margin: 20px 0;
+      font-size: 14.5px;
+    }
+    code {
+      background: #f4f4f4;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 94%;
+    }
+    kbd {
+      background: #333;
+      color: #fff;
+      padding: 3px 7px;
+      border-radius: 4px;
+      font-size: 90%;
+      box-shadow: 0 2px 0 #111;
+    }
+    pre code, pre kbd, pre samp { background: none; padding: 0; border-radius: 0; box-shadow: none; color: inherit; }
+  </style>
+</head>
+<body>
+
+  <h1>Demo 4 Elemen HTML Keren</h1>
+  <p> sebenernya ini lagi bahas samp, tapi yaudahlah sekalian, bahas <strong>pre, code, samp sama kdb</strong></p>
+
+  <blockquote>
+    "Elemen <code>&lt;samp&gt;</code> (Sample Output) dalam HTML digunakan untuk menampilkan 
+    output dari program, sistem, atau perangkat lunak.<br>
+    Teks di dalamnya biasanya ditampilkan dalam font monospace (seperti <code>&lt;code&gt;</code> 
+    dan <code>&lt;kbd&gt;</code>), sehingga mudah dibedakan dari teks biasa."
+  </blockquote>
+
+  <h2>Contoh Penggunaan yang Benar & Cantik</h2>
+
+  <p>Ketik perintah di terminal, lalu tekan <kbd>Enter</kbd>:</p>
+  <pre><code>$ git status</code></pre>
+
+  <p>Maka output yang akan muncul:</p>
+  <pre><samp>On branch main
+Your branch is up to date with 'origin/main'.
+nothing to commit, working tree clean</samp></pre>
+
+  <p>Contoh output error satu baris:</p>
+  <p><samp>Error 404: Halaman tidak ditemukan.</samp></p>
+
+  <p>Contoh dalam kalimat biasa:</p>
+  <p>Program mengembalikan: <samp>Hello, World!</samp> Selamat ya!</p>
+
+  <p>Contoh kombinasi lengkap (paling sering dipakai di tutorial pro):</p>
+  <pre><code>$ python halo.py</code>
+<samp>Halo, selamat datang di dunia Python!
+Umur kamu berapa? <kbd>17</kbd>
+Wah masih remaja nih!</samp></pre>
+
+  <!-- Catatan  -->
+  <hr>
+  <p><strong>Tips:</strong></p>
+  <ul>
+    <li>Gunakan <code>&lt;pre&gt;&lt;code&gt;</code> → untuk perintah yang diketik user</li>
+    <li>Gunakan <code>&lt;pre&gt;&lt;samp&gt;</code> → untuk output multi-baris</li>
+    <li>Gunakan <kbd>kbd</kbd> → untuk tombol keyboard</li>
+    <li>Jangan ubah font-family di <code>body</code> atau <code>:root</code> kalau mau <kbd> dan <samp> tetap kelihatan beda</li>
+  </ul>
+
+</body>
+</html>
